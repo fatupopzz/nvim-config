@@ -21,6 +21,9 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'tomasiser/vim-code-dark'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'MunifTanjim/nui.nvim'
+Plug 'habamax/vim-godot'
+Plug 'neovim/nvim-lspconfig'
+Plug 'arctila/nord-vim'
 
 "lavi tema 
 Plug 'rktjmp/lush.nvim'
@@ -56,10 +59,9 @@ set cindent
 
 " Configurar tema
 try
-    colorscheme Nightfox
+    colorscheme nord
 catch
-    " Si lavi no está disponible, usar gruvbox como fallback
-    colorscheme Nightfox
+    colorscheme gruvbox
     set background=dark
 endtry
 
@@ -236,7 +238,7 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_statusline_ontop=0
-let g:airline_theme='base16_twilight'
+let g:airline_theme='nord'
 let g:airline#extensions#tabline#formatter = 'default'
 
 " navegación entre os buffers
